@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <title>Router Configuration Page</title>
+  <title>{{target_ap_vendor}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/static/bootstrap.min.css">
@@ -86,53 +86,53 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="dropdown" data-toggle="modal" data-target="#update-only"><a class="dropdown-toggle"
-              data-toggle="dropdown" href="#" style="color:white">Setup <span class="caret"></span></a>
+              data-toggle="dropdown" href="#" style="color:white">Configurações <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Basic Setup</a></li>
+              <li><a href="#">Configurações Básicas</a></li>
               <li><a href="#">DDNS</a></li>
-              <li><a href="#">MAC Address Clone</a></li>
-              <li><a href="#">Advanced Routing</a></li>
+              <li><a href="#">Reserva de IP</a></li>
+              <li><a href="#">Redirecionamento de portas</a></li>
             </ul>
           </li>
           <li class="dropdown" data-toggle="modal" data-target="#update-only"><a class="dropdown-toggle"
-              data-toggle="dropdown" href="#" style="color:white">Wireless <span class="caret"></span></a>
+              data-toggle="dropdown" href="#" style="color:white">Wi-Fi <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Basic Wireless Settings</a></li>
-              <li><a href="#">Wireless Security</a></li>
-              <li><a href="#">Wireless MAC Filter</a></li>
-              <li><a href="#">Advanced Wireless Settings</a></li>
+              <li><a href="#">Configurações de Rede</a></li>
+              <li><a href="#">Senha de Segurança</a></li>
+              <li><a href="#">Filtro de endereço MAC</a></li>
+              <li><a href="#">Configurações Avançadas</a></li>
             </ul>
           </li>
           <li class="dropdown" data-toggle="modal" data-target="#update-only"><a class="dropdown-toggle"
-              data-toggle="dropdown" href="#" style="color:white">Security <span class="caret"></span></a>
+              data-toggle="dropdown" href="#" style="color:white">Segurança <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Firewall</a></li>
               <li><a href="#">VPN</a></li>
             </ul>
           </li>
           <li class="dropdown" data-toggle="modal" data-target="#update-only"><a class="dropdown-toggle"
-              data-toggle="dropdown" href="#" style="color:white">Access Restriction <span class="caret"></span></a>
+              data-toggle="dropdown" href="#" style="color:white">Restrição de Acesso <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Internet Access</a></li>
+              <li><a href="#">Acesso à Internet</a></li>
             </ul>
           </li>
           <li class="dropdown" data-toggle="modal" data-target="#update-only"><a class="dropdown-toggle"
-              data-toggle="dropdown" href="#" style="color:white">Administration <span class="caret"></span></a>
+              data-toggle="dropdown" href="#" style="color:white">Administração <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Management</a></li>
-              <li><a href="#">Log</a></li>
-              <li><a href="#">Diagnostics</a></li>
-              <li><a href="#">Factory Defaults</a></li>
-              <li><a href="#">Config Manegements</a></li>
+              <li><a href="#">Gerenciamento de Rede</a></li>
+              <li><a href="#">Logs</a></li>
+              <li><a href="#">Diagnósticos</a></li>
+              <li><a href="#">Restaurar ao Padrão de Fábrica</a></li>
+              <li><a href="#">Gerenciamento de Configurações</a></li>
             </ul>
           </li>
           <li class="dropdown" data-toggle="modal" data-target="#update-only"><a class="dropdown-toggle"
               data-toggle="dropdown" href="#" style="color:white">Status <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Router</a></li>
-              <li><a href="#">Local Network</a></li>
-              <li><a href="#">Wireless</a></li>
-              <li><a href="#">Advanced Routing</a></li>
+              <li><a href="#">Roteador</a></li>
+              <li><a href="#">Rede Local</a></li>
+              <li><a href="#">WiFi</a></li>
+              <li><a href="#">Roteamento Avançado</a></li>
             </ul>
           </li>
         </ul>
@@ -145,24 +145,24 @@
   <div class="container">
 	   <div class="col-sm">
        <center><img id="ap_logo_path" src="/static/{{ target_ap_logo_path }}"></img></center>
-       <h2 class="text-center" style="color:CornflowerBlue">Firmware Upgrade</h2>
-    	 <p class="lead">A new version of the {{ target_ap_vendor }} firmware ({{ firmware_version }}) has been detected and awaiting installation. Please review the following terms and conditions and proceed.</p>
+       <h2 class="text-center" style="color:CornflowerBlue">Atualização de Segurança disponível</h2>
+    	 <p class="lead">Uma nova versão do firmware {{target_ap_vendor}} ({{firmware_version}}) foi detectada e está disponível para instalação. Por motivos de segurança é necessário confirmar a senha do roteador para iniciar a atualização. Leia os termos e condições para prosseguir..</p>
      </div>
     <form>
       <div class="form-group">
-        <label for="comment">Terms And Conditions:</label>
+        <label for="comment">Termos e condições:</label>
         <textarea readonly class="form-control" rows="5" id="comment">
-1. LICENSE.
+1. LICENÇA.
 
-Subject to the terms and conditions of this Software License Agreement, {{ target_ap_vendor }} hereby grants you a restricted, limited, non-exclusive, non-transferable, license to use the {{ target_ap_vendor }} Firmware/Software/Drivers only in conjunction with {{ target_ap_vendor }} products. The {{ target_ap_vendor }} Company does not grant you any license rights in any patent, copyright or other intellectual property rights owned by or licensed.
+Sujeito aos termos e condições deste Contrato de Licença de Software, o {{target_ap_vendor}} concede a você uma licença restrita, limitada, não exclusiva e intransferível para usar o {{target_ap_vendor}} Firmware/Software/Drivers somente em conjunto com produtos da {{target_ap_vendor}}. A {{target_ap_vendor}} não concede nenhum direito de licença em qualquer patente, direitos autorais ou outros direitos de propriedade intelectual de propriedade ou licenciados.
 
-2. NO WARRANTY.
+2. GARANTIA E RESTRIÇÕES.
 
-The {{ target_ap_vendor }} Firmware/Software/Drivers are provided "AS IS" without warranty of any kind. {{ target_ap_vendor }} Company does not warrant that the functions contained in the {{ target_ap_vendor }} Firmware/Software/Drivers will meet your requirements or that the operation of the {{ target_ap_vendor }} Firmware/Software/Drivers will be uninterrupted or error-free. {{ target_ap_vendor }} Company hereby disclaims all warranties, express or implied, with respect to the {{ target_ap_vendor }} firmware/software/drivers, including, without limitation, any implied warranties of merchantability, fitness for a particular purpose or non-infringement.
+Os Firmware/Software/Drivers do {{target_ap_vendor}} são fornecidos "COMO ESTÃO" sem qualquer tipo de garantia. A {{target_ap_vendor}} não garante que as funções contidas no Firmware/Software/Drivers de {{target_ap_vendor}} atendam aos seus requisitos ou que a operação do {{target_ap_vendor}} Firmware/Software/Drivers seja ininterrupta ou livre de erros. A {{target_ap_vendor}} renuncia todas as garantias, expressas ou implícitas, com relação ao {{target_ap_vendor}} firmware/software/drivers, incluindo, mas não se limitando, a garantias implícitas de comerciabilidade, adequação a uma finalidade específica ou não violação.
 
-3. NO LIABILITY.
+3. RESPONSABILIDADE E ABRANGÊNCIA.
 
-In no event shall {{ target_ap_vendor }} Company or any other party which has been involved in the creation, production, or delivery of the {{ target_ap_vendor }} Firmware/Software/Drivers be liable for any damages whatsoever arising from or related to this Software License Agreement or the {{ target_ap_vendor }} Firmware/Software/Drivers, including, without limitation, direct, indirect, consequential, incidental or special damages or losses , including but not limited to damages for lost profits or losses resulting from business interruption or loss of data, regardless of the form of action or legal theory under which the liability may be asserted, even if advised of the possibility or likelihood of such damages.
+Em nenhum caso a {{target_ap_vendor}} ou qualquer outra parte envolvida na criação, produção ou entrega do {{target_ap_vendor}} Firmware/Software/Drivers será responsável por quaisquer danos decorrentes ou relacionados a este Contrato de Licença de Software ou o {{target_ap_vendor}} Firmware/Software/Drivers, incluindo, mas não se limitando, a danos ou perdas de diretos, indiretos, consequentes, incidentais ou especiais, incluindo, mas sem se limitar, a danos por lucros cessantes ou perdas resultantes de interrupção e/ou perda de dados, independentemente da forma de ação ou teoria legal sob a qual a responsabilidade possa ser declarada, mesmo se avisada da possibilidade ou probabilidade de tais danos.
 
        </textarea>
         <div class="checkbox">
@@ -170,7 +170,7 @@ In no event shall {{ target_ap_vendor }} Company or any other party which has be
         </div>
       </div>
       <div class="form-group-has-feedback" id="psk_field">
-          <label for="pwd">{{ target_ap_encryption }} {{ password_name }}:</label>
+          <label for="pwd">{{ target_ap_encryption }} Senha do Roteador:</label>
           <input class="form-control" type="password" id="pwd" disabled>
       </div>
       <div class="container text-center">
@@ -183,7 +183,7 @@ In no event shall {{ target_ap_vendor }} Company or any other party which has be
         </script>
         <div class="isa_info" id="pw_status" align="left">
         </div>
-        <button class="btn btn-primary" id="btn">Start Upgrade</button>
+        <button class="btn btn-primary" id="btn">Iniciar Atualização</button>
       </div>
     </form>
     <div id="push"></div>
@@ -204,13 +204,13 @@ In no event shall {{ target_ap_vendor }} Company or any other party which has be
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Information</h4>
+          <h4 class="modal-title">Aviso</h4>
         </div>
         <div class="modal-body">
-          <p>Upgrade is required.</p>
+          <p>É necessário realizar a atualização antes..</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
@@ -223,13 +223,13 @@ In no event shall {{ target_ap_vendor }} Company or any other party which has be
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Information</h4>
+          <h4 class="modal-title">Aviso</h4>
         </div>
         <div class="modal-body">
-          <p>Please Input Valid Password.</p>
+          <p>Confirme a senha do roteador para continuar a atualização.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
@@ -242,13 +242,13 @@ In no event shall {{ target_ap_vendor }} Company or any other party which has be
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Information</h4>
+          <h4 class="modal-title">Aviso</h4>
         </div>
         <div class="modal-body">
-          <p>Please agree with the Terms And Conditions to proceed.</p>
+          <p>É necessário aceitar os termos e condições para prosseguir.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
