@@ -5,70 +5,82 @@
 
 <p align="center"><img src="https://wifiphisher.github.io/wifiphisher/wifiphisher.png" /></p>
 
-## About
-<a href="https://wifiphisher.org">Wifiphisher</a> is a rogue Access Point framework for conducting red team engagements or Wi-Fi security testing. Using Wifiphisher, penetration testers can easily achieve a man-in-the-middle position against wireless clients by performing targeted Wi-Fi association attacks. Wifiphisher can be further used to mount victim-customized web phishing attacks against the connected clients in order to capture credentials (e.g. from third party login pages or WPA/WPA2 Pre-Shared Keys) or infect the victim stations with malwares.
+## Sobre
+<a href="https://wifiphisher.org">Wifiphisher</a> é um framework que utiliza um Ponto de Acesso falso para conduzir testes de segurança em redes Wi-Fi. Usando Wifiphisher, profissionais de segurança da informação podem facilmente se colocar na posição man-in-the-middle, testando clientes vulneráveis por ataques de associação a uma rede Wi-Fi. Wifiphisher pode ser também utilizado para atuar de forma customizada para entregar ataques com páginas de phishing para clientes com o intuito de capturar credenciais (ex.: desde login em páginas de terceitos ou senhas WPA/WPA2 compartilhadas) ou infectar o cliente com malwares.
 
-Wifiphisher is...
+Esse projeto não é de minha autoria, apenas o traduzi para português. Qualquer falha na tradução estou aberto a correções e sugestões para o aprimoramento da ferramenta
 
-* ...powerful. Wifiphisher can run for hours inside a Raspberry Pi device
-executing all modern Wi-Fi association techniques (including "Evil Twin", "KARMA" and "Known Beacons").  
+O projeto original e todo o crédito de programação pode ser conferido na pagina:
 
-* ...flexible. Supports dozens of arguments and comes with a set of
-community-driven phishing templates for different deployment scenarios.  
+https://github.com/wifiphisher/wifiphisher
 
-* ...modular. Users can <a href="http://wifiphisher.readthedocs.io/en/latest/extensions.html">write simple or complicated modules</a> in Python to expand the functionality of the tool or <a href="http://wifiphisher.readthedocs.io/en/latest/custom_phishing_scenario.html">create custom phishing scenarios</a> in order to conduct specific target-oriented attacks. 
+Wifiphisher é...
 
-* ...easy to use. Advanced users can utilize the rich set of features that Wifiphisher offers but beginners may start out as simply as "./bin/wifiphisher". The interactive Textual User Interface guides the tester through the build process of the attack. 
+* ...poderoso. Wifiphisher pode rodar por horas em um Raspberry Pi (funciona perfeitamente no Raspberry 4B e Raspberry 400 com o Kali Linux)
+executando todas as técnicas modernas de associação Wi-Fi (incluindo "Evil Twin", "KARMA" e "Known Beacons"). 
 
-* ...the result of an extensive research. Attacks like "Known Beacons" and "Lure10" as well as state-of-the-art phishing techniques, were disclosed by our developers, and Wifiphisher was the first tool to incorporate them. 
+* ...flexivel. Tem suporte de vários argumentos e vem com um conjunto de
+páginas de phishing oriundas da comunidade para a entrega de vários cenários de ataque.  
 
-* ...supported by an awesome community of developers and users.
+* ...modular. Usuários podem <a href="http://wifiphisher.readthedocs.io/en/latest/extensions.html">escrever módulos simples ou complicados</a> em Python para expandir a funcionalidade da ferramenta ou <a href="http://wifiphisher.readthedocs.io/en/latest/custom_phishing_scenario.html">customizar cenários de phishing</a> para entrergar ataques a alvos específicos de forma inteiramente personalizada. 
 
-* ...free. Wifiphisher is available for free download, and also comes with full
-source code that you may study, change, or distribute under the terms of the 
-GPLv3 license.
+* ...fácil de usar. Usuários avançados podem utilizar um rico conjunto de recursos oferecidos pelo Wifiphisher. Iniciantes podem começar de forma simples, executando "./bin/wifiphisher". A interface de texto interativa facilita a execução do ataque. 
 
-## Sponsors 
+* ...os recursos de uma pesquisa extensiva. Ataque do tipo "Known Beacons" e "Lure10" assim como a arte de técnicas de phishing, foram encerrados pelos desenvolvedores, e o Wifiphisher foi a primeira ferramenta a incorporá-los. 
 
-Wifiphisher is free (as in speech, and as in beer) and will always be. Continuous development of the project would not be possible without our sponsors and supporters:
+* ...apoiado com uma ótima comunidade de desenvolvedores e usuários.
+
+* ...gratuito. Wifiphisher está disponível para download gratuitamente, e vem com o código-fonte completo
+para que você possa estudar, modificar ou distribuir, sob os termos de licensa GPLv3.
+
+## Patrocinadores 
+
+Wifiphisher é gratuito e sempre será. Desenvolvimento continuo desse projeto não seria possível sem a participação dos patrocinadores e apoiadores dos desenvolvedores:
 
 <a href="https://www.tines.com/?utm_source=oss&utm_medium=sponsorship&utm_campaign=wifiphisher"><p align="center"><img src="https://wifiphisher.github.io/wifiphisher/tines_logo.png" /></p></a>
 
-## How it works
+## Como funciona?
 
-Wi-Fi phishing consists of two steps:
+Phishing de Wi-Fi é dividido em duas etapas:
 
-1. The first step involves the process of associating with Wi-Fi clients
-unknowingly, or in other words, obtaining a man-in-the-middle (MITM) position. Wifiphisher uses a number of different techniques to achieve this including:
-    * Evil Twin, where Wifiphisher creates a fake wireless network that looks similar to a legitimate network.
-    * KARMA, where Wifiphisher masquerades as a public network searched for by nearby Wi-Fi clients.
-    * Known Beacons, where Wifiphisher broadcasts a dictionary of common ESSIDs, that the around wireless stations have likely connected to in the past.
+1. O primeiro passo envolve o processo de associação com clientes Wi-Fi inadvertidamente, 
+em outras palavras obtendo a posição de man-in-the-middle (MITM). Wifiphisher usa um variado número de técnicas para alcançar esse objetivo, incluindo:
+    * Evil Twin, onde Wifiphisher cria um ponto de acesso falso que se assemelha à rede Wi-Fi de maneira legítima.
+    * KARMA, onde Wifiphisher se disfarça de uma rede pública procurada por clientes Wi-Fi no seu entorno.
+    * Known Beacons, onde Wifiphisher transmite um dicionario de ESSIDs, que os clientes Wi-Fi se conectaram em algum momento.
 
-    At the same time, Wifiphisher keeps forging “Deauthenticate” or “Disassociate” packets to disrupt existing associations and eventually lure victims using the above techniques.
+    Ao mesmo tempo, Wifiphisher manda pacotes “Deauthenticate” ou “Disassociate” para interromper uma associação existente e eventualmente enganar a vítima utilizando as tecnicas descritas.
 
-<p align="center"><img width="70%" src="https://wifiphisher.github.io/wifiphisher/diagram.jpg" /><br /><i>Performing MiTM attack</i></p>
+<p align="center"><img width="70%" src="https://wifiphisher.github.io/wifiphisher/diagram.jpg" /><br /><i>Executando um ataque man-in-the-middle</i></p>
 
-2. (Optionally) There are a number of different attacks that can be carried out 
-once Wifiphisher grants the penetration tester with a man-in-the-middle
-position. For example, the tester may perform data sniffing or scan the victim stations for vulnerabilities. 
+2. (Opcional) Existem diferentes ataque que podem ser feitos em seguida 
+uma vez que o Wifiphisher coloca o atacante na posição de man-in-the-middle.
+Por exemplo, o atacante pode capturar pacotes de dados ou escanear os clientes da rede por vulnerabilidades. 
 
-    Using Wifiphisher, advanced web phishing techniques are possible by gathering
-information from the target environment and victim user. For example, in one of
-our scenarios, Wifiphisher will extract information from the broadcasted beacon
-frames and the HTTP User-Agent header to display a web-based imitation of
-Windows network manager in order to capture the Pre-Shared Key.
+    Usando Wifiphisher, técnicas de phishing são possíveis atraves da coleta de informação
+do ambiente do alvo e do usuário vítima. Por exemplo, em um dos
+cenarios, Wifiphisher vai extrair informações das transmissões de frames e o cabeçalho HTTP User-Agent para dispor uma imitação de uma aplicação web de acesso
+para capturar uma senha pré-compartilhada.
 
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss-webphishing.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
+<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss-webphishing.png" /><br /><i>Gerenciador de Rede baseado em interface web <a href="https://wifiphisher.org/ps/wifi_connect/">falsa</a></i></p>
 
-## Requirements
-Following are the requirements for getting the most out of Wifiphisher:
+## Requisitos
+Para extrair o máximo de proveito do Wifiphisher são necessários os seguintes requisitos:
 
-  - A working Linux system. People have made Wifiphisher work on many distros, but Kali Linux is the officially supported distribution, thus all new features are primarily tested on this platform.
-  - One wireless network adapter that supports AP & Monitor mode and is capable of injection. Drivers should support netlink.
+  - Um sistema Linux funcional. Apesar de várias pessoas fazerem a portabilidade em outras distribuições, o Kali Linux é a distribuição oficial da qual é dado suporte, já que os novos recursos são testados primeiramente nessa distribuição.
+  - Um adaptador de rede que suporte AP & Monitor mode e capazes de injetar pacotes. Drivers pode suportar netlink.
 
-## Installation
+## Instalação
 
-To install the latest development version type the following commands:
+Para instalar essa versão traduzida siga os seguintes passos no terminal:
+
+```bash
+git clone https://github.com/arm-ARMY/wifiphisher.git
+cd wifiphisher # Mudar pada o diretório da ferramenta
+sudo python3 setup.py install # Instalar as dependencias necessárias
+```
+
+Para instalar a última versão em desenvolvimento com código original (em inglês) digite os seguintes commandos:
 
 ```bash
 git clone https://github.com/wifiphisher/wifiphisher.git # Download the latest revision
@@ -76,13 +88,13 @@ cd wifiphisher # Switch to tool's directory
 sudo python setup.py install # Install any dependencies
 ```
 
-Alternatively, you can download the latest stable version from the <a href="https://github.com/wifiphisher/wifiphisher/releases">Releases page</a>.
+Alternativamente, você pode baixar a última versão estável (em inglês) a partir do link <a href="https://github.com/wifiphisher/wifiphisher/releases">Página de versões</a>.
 
-## Usage
+## Uso
 
-Run the tool by typing `wifiphisher` or `python bin/wifiphisher` (from inside the tool's directory).
+Execute a ferramenta digitando `wifiphisher` ou `python bin/wifiphisher` (estando no diretorio onde a ferramenta foi instalada).
 
-By running the tool without any options, it will find the right interfaces and interactively ask the user to pick the ESSID of the target network (out of a list with all the ESSIDs in the around area) as well as a phishing scenario to perform. By default, the tool will perform both Evil Twin and KARMA attacks.
+Ao executar o comando sem nenhum parâmetro, Wifiphisher vai procurar as interfaces de rede corretas e perguntar interativamente ao usuário para selecionar um ESSID alvo (de uma lista com todas as ESSIDs encontradas ao redor) assim como o cenário de phishing a executar. Por padrão, a ferramenta vai executar tanto o Evil Twin como o KARMA attacks.
 
 ***
 
@@ -90,9 +102,9 @@ By running the tool without any options, it will find the right interfaces and i
 wifiphisher -aI wlan0 -jI wlan4 -p firmware-upgrade --handshake-capture handshake.pcap
 ```
 
-Use wlan0 for spawning the rogue Access Point and wlan4 for DoS attacks. Select the target network manually from the list and perform the "Firmware Upgrade" scenario. Verify that the captured Pre-Shared Key is correct by checking it against the handshake in the handshake.pcap file.
+Use wlan0 para lançar um ponto de acesso falso e wlan4 para os ataques DOS. Selecione da lista manualmente uma rede e execute o cenário "Firmware Upgrade". Verifique que a senha compartilhada está correta checando ela no handshake, no arquivo handshake.pcap.
 
-Useful for manually selecting the wireless adapters. The <a href="https://wifiphisher.org/ps/firmware-upgrade/">"Firmware Upgrade"</a> scenario is an easy way for obtaining the PSK from a password-protected network.
+Útil para selecionar um adaptador de rede manualmente. O <a href="https://wifiphisher.org/ps/firmware-upgrade/">"Firmware Upgrade"</a> cenário é a maneira mais fácil de se obter a senha de uma rede protegida por senha.
 
 ***
 
@@ -100,9 +112,9 @@ Useful for manually selecting the wireless adapters. The <a href="https://wifiph
 wifiphisher --essid CONFERENCE_WIFI -p plugin_update -pK s3cr3tp4ssw0rd
 ```
 
-Automatically pick the right interfaces. Target the Wi-Fi with ESSID "CONFERENCE_WIFI" and perform the "Plugin Update" scenario. The Evil Twin will be password-protected with PSK "s3cr3tp4ssw0rd".
+Automaticamente selecione a interface correta. Tenha como alvo o Wi-Fi com ESSID "CONFERENCE_WIFI" e execute o cenário "Plugin Update". O Evil Twin será protegido por senha "s3cr3tp4ssw0rd".
 
-Useful against networks with disclosed PSKs (e.g. in conferences). The <a href="https://wifiphisher.org/ps/plugin_update/">"Plugin Update"</a> scenario provides an easy way for getting the victims to download malicious executables (e.g. malwares containing a reverse shell payload).
+Útil contra redes com senhas já compartilhadas (ex.: em conferências). O cenário <a href="https://wifiphisher.org/ps/plugin_update/">"Plugin Update"</a> é uma maneira fácil de entregar executáveis maliciosos (ex.: malwares contendo um reverse shell payload).
 
 ***
 
@@ -110,14 +122,16 @@ Useful against networks with disclosed PSKs (e.g. in conferences). The <a href="
 wifiphisher --essid "FREE WI-FI" -p oauth-login -kB
 ```
 
-Simply spawn an open Wi-Fi network with ESSID "FREE WI-FI" and perform the "OAuth Login" scenario. Furthermore, mount the "Known Beacons" Wi-Fi automatic association technique.
+Lance uma rede Wi-Fi aberta com o ESSID "FREE WI-FI" e execute o cenário "OAuth Login". Além disso, use a técnica de associação Wi-Fi automática "Known Beacons". 
 
-Useful against victims in public areas. The <a href="https://wifiphisher.org/ps/oauth-login/">"OAuth Login"</a> scenario provides a simple way for capturing credentials from social networks, like Facebook. 
+Útil contra vítimas em áreas públicas. O cenário <a href="https://wifiphisher.org/ps/oauth-login/">"OAuth Login"</a> é uma forma simples de capturar credenciais de redes sociais, como o FaceBook.
+
+Obs.: esse exemplo usado ainda tem uma página phishing muito diferente da original. Se você é programador e em tem conhecimento de html sua ajuda é muito bem vinda.
+
+A seguir estão todas as opções com suas descrições, em inglês, já que esse fork se limitou a traduzir apenas as páginas html (também disponível com 'wifiphisher -h'):
 
 
-Following are all the options along with their descriptions (also available with `wifiphisher -h`):
-
-| Short form | Long form | Explanation |
+| Forma curta | Forma longa | Explicação |
 | :----------: | :---------: | :-----------: |
 |-h | --help| show this help message and exit |
 |-i INTERFACE| --interface INTERFACE| Manually choose an interface that supports both AP and monitor modes for spawning the rogue AP as well as mounting additional Wi-Fi attacks from Extensions (i.e. deauth). Example: -i wlan1 |
@@ -155,33 +169,40 @@ Following are all the options along with their descriptions (also available with
 
 ## Screenshots
 
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss5.png" /><br /><i>Targeting an access point</i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss2.png" /><br /><i>A successful attack</i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss7.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/firmware-upgrade/">router configuration page</a></i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss6.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/oauth-login/">OAuth Login Page</a></i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss4.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
+<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss5.png" /><br /><i>Um ponto de acesso como alvo</i></p>
+<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss2.png" /><br /><i>Um ataque bem sucedido</i></p>
+<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss7.png" /><br /><i>Página falsa de <a href="https://wifiphisher.org/ps/firmware-upgrade/">router configuration page</a></i></p>
+<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss6.png" /><br /><i>Página falsa de <a href="https://wifiphisher.org/ps/oauth-login/">OAuth Login Page</a></i></p>
+<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss4.png" /><br /><i>Página falsa de <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
 
 
-## Help needed
-If you are a Python developer or a web designer you can help us improve Wifiphisher. Feel free to take a look at the <a href="https://github.com/wifiphisher/wifiphisher/issues">bug tracker</a> for some tasks to do.
+## Ajuda requerida
+Se você é desenvolvedor em Python ou web designer você pode ajudar os desenvovedores do projeto Wifiphisher a melhorar a ferramenta. Sinta-se livre para dar uma olhada no rastreador de bugs <a href="https://github.com/wifiphisher/wifiphisher/issues">bug tracker</a> e verá que ainda há muito o que melhorar.
 
-If you don't know how to code, you can help us by <a href="https://github.com/wifiphisher/wifiphisher/issues">proposing improvements or reporting bugs</a>. Please have a look at the Bug Reporting Guidelines and the <a href="https://wifiphisher.readthedocs.io/en/latest/faq.html">FAQ document</a> beforehand.  Note that the tool does not aim to be script-kiddie friendly. Make sure you do understand how the tool works before opening an issue.
+Se você sabe programar, você pode ajudar os desenvolvedores do projeto <a href="https://github.com/wifiphisher/wifiphisher/issues">propondo melhorias ou relataldo bugs</a>. Por favor, dê uma olhada no Guia para Relatar Bugs em <a href="https://wifiphisher.readthedocs.io/en/latest/faq.html">FAQ document</a> antes de relatar um bug já relatado. Essa ferramenta não é destinada a ser amigável com iniciantes. Certifique-se de compreender como a ferramenta funciona antes de relatar um erro.
 
-## Credits
-The script is based on an idea from <a
-href="https://github.com/DanMcInerney">Dan McInerney</a> back in 2015.
+## Créditos dos desenvolvedores
+O script foi baseado em uma ideia de <a
+href="https://github.com/DanMcInerney">Dan McInerney</a> ainda em 2015.
 
-A full list of contributors lies <a href="https://github.com/wifiphisher/wifiphisher/graphs/contributors">here</a>.
+A lista completa de colaboradores pode ser vista <a href="https://github.com/wifiphisher/wifiphisher/graphs/contributors">aqui</a>.
 
-## License
-Wifiphisher is licensed under the GPLv3 license. See [LICENSE](LICENSE) for more information.
+## Licença
+Wifiphisher é licenciado sob a licensa GPLv3. Veja [LICENSE](LICENSE) para mais informações.
 
-## Project Status
-Wifiphisher's current version is **1.4**. You can download the latest release from <a href="https://github.com/wifiphisher/wifiphisher/releases/tag/v1.4">here</a>. Otherwise you can get the latest development version by cloning this repository.
+## Status do Projeto
+Wifiphisher está atualmente na versão **1.4**. Você pode baixar a versão mais recente <a href="https://github.com/wifiphisher/wifiphisher/releases/tag/v1.4">aqui</a>. Entretanto você pode clonar a esse repositório, que é  a última versão em desenvolvimento.
 
-## Disclaimer
-* Usage of Wifiphisher for attacking infrastructures without prior mutual consistency can be considered as an illegal activity. It is the final user's responsibility to obey all applicable local, state and federal laws. Authors assume no liability and are not responsible for any misuse or damage caused by this program.
+## Status dessa tradução (W.I.P)
+Atualmente a versão usada nessa tradução foi a última versão em desenvolvimento. Ela encontra-se na fase de desenvolvimento. A pasta firmware-upgrade
+está na sua fase final. Os três outros estão por vir logo logo. 
 
-<b>Note</b>: Be aware of sites pretending to be related with the Wifiphisher Project. They may be delivering malware.
+## AVISO
+* O uso do Wifiphisher para atacar infraestruturas sem o consentimento mútuo pode ser considerado uma atividade ilegal. É responsabilidade do usuário final obedecer todas as leis aplicáveis, sejam locais, estaduais ou federais. Os autores nao assumem nenhuma responsabilidade por uso indevido ou causado por esse programa.
 
-For Wifiphisher news, follow us on <a href="https://www.twitter.com/wifiphisher">Twitter</a> or like us on <a href="https://www.facebook.com/Wifiphisher-129914317622032/">Facebook</a>.
+<b>Nota dos desenvolvedores</b>: Cuidado com sites fingindo estar relacionadas ao Wifiphisher Project. Elas podem conter malwares.
+
+<b>Nota do tradutor</b>: Esse fork não altera o código fonte da ferramenta, nem a programação envolvida para o seu funcionamento. 
+É apenas uma tradução dos links em html.
+
+Para novidades Wifiphisher, siga os desenvolvedores em <a href="https://www.twitter.com/wifiphisher">Twitter</a> ou apoiem eles no <a href="https://www.facebook.com/Wifiphisher-129914317622032/">Facebook</a>.
