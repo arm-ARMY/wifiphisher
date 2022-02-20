@@ -8,7 +8,7 @@
 ## Sobre a Tradução
 Esse projeto não é de minha autoria, apenas o traduzi os arquivos html para português. Qualquer falha na tradução estou aberto a correções e sugestões para o aprimoramento da ferramenta.
 
-O projeto original e todo o crédito de programação pode ser conferido na página:
+O projeto original e todo o crédito de programação pode ser conferido na página oficial do GitHub:
 
 https://github.com/wifiphisher/wifiphisher
 
