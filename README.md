@@ -25,7 +25,7 @@ páginas de phishing oriundas da comunidade para a entrega de vários cenários 
 
 * ...modular. Usuários podem <a href="http://wifiphisher.readthedocs.io/en/latest/extensions.html">escrever módulos simples ou complicados</a> em Python para expandir a funcionalidade da ferramenta ou <a href="http://wifiphisher.readthedocs.io/en/latest/custom_phishing_scenario.html">customizar cenários de phishing</a> para entrergar ataques a alvos específicos de forma inteiramente personalizada. 
 
-* ...fácil de usar. Usuários avançados podem utilizar um rico conjunto de recursos oferecidos pelo Wifiphisher. Iniciantes podem começar de forma simples, executando "./bin/wifiphisher". A interface de texto interativa facilita a execução do ataque. 
+* ...fácil de usar. Usuários avançados podem utilizar um arsenal de recursos oferecidos pelo Wifiphisher. Iniciantes podem começar de forma simples, executando "./bin/wifiphisher". A interface de texto interativa facilita a execução do ataque. 
 
 * ...recursos de uma pesquisa extensiva. Ataque do tipo "Known Beacons" e "Lure10" assim como a arte da técnica de phishing, foram encerrados por desenvolvedores, e o Wifiphisher foi a primeira ferramenta a incorporá-los. 
 
