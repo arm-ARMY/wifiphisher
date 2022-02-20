@@ -79,7 +79,7 @@ Para instalar essa versão traduzida siga os seguintes passos no terminal:
 
 ```bash
 sudo apt-get update
-sudo apt-get install libnl-3-dev libnl-genl-3-dev libssl-dev
+sudo apt-get install libnl-3-dev libnl-genl-3-dev libssl-dev -y
 git clone https://github.com/arm-ARMY/wifiphisher.git
 cd wifiphisher 
 sudo python3 setup.py install
