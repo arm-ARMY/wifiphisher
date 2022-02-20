@@ -5,7 +5,7 @@
 
 <p align="center"><img src="https://wifiphisher.github.io/wifiphisher/wifiphisher.png" /></p>
 
-## Tradução
+## Sobre a Tradução
 Esse projeto não é de minha autoria, apenas o traduzi os arquivos html para português. Qualquer falha na tradução estou aberto a correções e sugestões para o aprimoramento da ferramenta.
 
 O projeto original e todo o crédito de programação pode ser conferido na página:
@@ -180,7 +180,7 @@ A seguir estão todas as opções com suas descrições, em inglês, já que ess
 ## Ajuda requerida
 Se você é desenvolvedor em Python ou web designer você pode ajudar os desenvovedores do projeto Wifiphisher a melhorar a ferramenta. Sinta-se livre para dar uma olhada no rastreador de bugs <a href="https://github.com/wifiphisher/wifiphisher/issues">bug tracker</a> e verá que ainda há muito o que melhorar.
 
-Se você sabe programar, você pode ajudar os desenvolvedores do projeto <a href="https://github.com/wifiphisher/wifiphisher/issues">propondo melhorias ou relataldo bugs</a>. Por favor, dê uma olhada no Guia para Relatar Bugs em <a href="https://wifiphisher.readthedocs.io/en/latest/faq.html">FAQ document</a> antes de relatar um bug já relatado. Essa ferramenta não é destinada a ser amigável com iniciantes. Certifique-se de compreender como a ferramenta funciona antes de relatar um erro.
+Se você sabe programar, você pode ajudar os desenvolvedores do projeto <a href="https://github.com/wifiphisher/wifiphisher/issues">propondo melhorias ou relatando bugs</a>. Por favor, dê uma olhada no Guia para Relatar Bugs em <a href="https://wifiphisher.readthedocs.io/en/latest/faq.html">FAQ document</a> antes de relatar um bug já relatado. Essa ferramenta não é destinada a ser amigável com iniciantes. Certifique-se de compreender como a ferramenta funciona antes de relatar um erro.
 
 ## Créditos dos desenvolvedores
 O script foi baseado em uma ideia de <a
