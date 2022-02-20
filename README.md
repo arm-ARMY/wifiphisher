@@ -27,7 +27,7 @@ páginas de phishing oriundas da comunidade para a entrega de vários cenários 
 
 * ...fácil de usar. Usuários avançados podem utilizar um rico conjunto de recursos oferecidos pelo Wifiphisher. Iniciantes podem começar de forma simples, executando "./bin/wifiphisher". A interface de texto interativa facilita a execução do ataque. 
 
-* ...os recursos de uma pesquisa extensiva. Ataque do tipo "Known Beacons" e "Lure10" assim como a arte de técnicas de phishing, foram encerrados pelos desenvolvedores, e o Wifiphisher foi a primeira ferramenta a incorporá-los. 
+* ...recursos de uma pesquisa extensiva. Ataque do tipo "Known Beacons" e "Lure10" assim como a arte da técnicas de phishing, foram encerrados por desenvolvedores, e o Wifiphisher foi a primeira ferramenta a incorporá-los. 
 
 * ...apoiado com uma ótima comunidade de desenvolvedores e usuários.
 
