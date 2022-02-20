@@ -6,9 +6,9 @@
 <p align="center"><img src="https://wifiphisher.github.io/wifiphisher/wifiphisher.png" /></p>
 
 ## Sobre a Tradução
-Esse projeto não é de minha autoria, apenas o traduzi os arquivos html para português. Qualquer falha na tradução estou aberto a correções e sugestões para o aprimoramento da ferramenta.
+Esse projeto não é de minha autoria, apenas traduzi os arquivos html para português. Qualquer erro de tradução, acentuação ou conconrdância percebido e sugestões são bem-vindas para o aprimoramento da ferramenta.
 
-O projeto original e todo o crédito de programação pode ser conferido na página oficial do GitHub:
+O projeto original e todo o crédito de programação pode ser conferido no repositório oficial do GitHub:
 
 https://github.com/wifiphisher/wifiphisher
 
@@ -36,7 +36,7 @@ para que você possa estudar, modificar ou distribuir, sob os termos de licensa 
 
 ## Patrocinadores 
 
-Wifiphisher é gratuito e sempre será. Desenvolvimento continuo desse projeto não seria possível sem a participação dos patrocinadores e apoiadores dos desenvolvedores:
+Wifiphisher é gratuito e sempre será. O desenvolvimento contínuo desse projeto não seria possível sem a participação dos patrocinadores e apoiadores dos desenvolvedores:
 
 <a href="https://www.tines.com/?utm_source=oss&utm_medium=sponsorship&utm_campaign=wifiphisher"><p align="center"><img src="https://wifiphisher.github.io/wifiphisher/tines_logo.png" /></p></a>
 
