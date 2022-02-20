@@ -20,7 +20,7 @@ Wifiphisher é...
 * ...poderoso. Wifiphisher pode rodar por horas em um Raspberry Pi (funciona perfeitamente no Raspberry 4B e Raspberry 400 com o Kali Linux)
 executando todas as técnicas modernas de associação Wi-Fi (incluindo "Evil Twin", "KARMA" e "Known Beacons"). 
 
-* ...flexivel. Tem suporte de vários argumentos e vem com um conjunto de
+* ...flexível. Tem suporte de vários argumentos e vem com um conjunto de
 páginas de phishing oriundas da comunidade para a entrega de vários cenários de ataque.  
 
 * ...modular. Usuários podem <a href="http://wifiphisher.readthedocs.io/en/latest/extensions.html">escrever módulos simples ou complicados</a> em Python para expandir a funcionalidade da ferramenta ou <a href="http://wifiphisher.readthedocs.io/en/latest/custom_phishing_scenario.html">customizar cenários de phishing</a> para entrergar ataques a alvos específicos de forma inteiramente personalizada. 
@@ -69,7 +69,7 @@ para capturar uma senha pré-compartilhada.
 Para extrair o máximo de proveito do Wifiphisher são necessários os seguintes requisitos:
 
   - Um sistema Linux funcional. Apesar de várias de existirem várias portabilidades para outras distribuições, o Kali Linux é a distribuição oficial da qual é dado suporte, já que os novos recursos são testados primeiramente nessa distribuição.
-  - Um adaptador de rede que suporte AP & Monitor mode e capazes de injetar pacotes.
+  - Um adaptador de rede (preferencialmente dois) que suporte AP & Monitor mode e capazes de injetar pacotes.
   
 Nota do tradutor: Apesar de o Kali Linux ser a distribuição oficial, nem todas as suas versões vêm com todas as bibliotecas para que esse programa funcione adequadamente, como distribuições mais antigas, Kali Live ISO 2021/2, Kali lite e distribuições Kali para Raspberry Pi por exemplo. O próprio processo de compilação é auto explicativo e vai orientar as bibliotecas necessárias. Para poupar trabalho foram acrescentadas duas linhas de commando que instalam  tais bibliotecas. Caso sua distribuição já tenha eles instalados esse passo simplesmente será ignorado durante o processo de instalação.
 
