@@ -42,7 +42,7 @@ Wifiphisher é gratuito e sempre será. O desenvolvimento contínuo desse projet
 
 ## Como funciona?
 
-Phishing de Wi-Fi é dividido em duas etapas:
+O ataque de phishing de Wi-Fi é dividido em duas etapas:
 
 1. O primeiro passo envolve o processo de associação com clientes Wi-Fi inadvertidamente, 
 em outras palavras obtendo a posição de man-in-the-middle (MITM). Wifiphisher usa um variado número de técnicas para alcançar esse objetivo, incluindo:
