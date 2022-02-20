@@ -86,7 +86,7 @@ Para instalar a última versão em desenvolvimento com código original (em ingl
 ```bash
 git clone https://github.com/wifiphisher/wifiphisher.git # Download the latest revision
 cd wifiphisher # Switch to tool's directory
-sudo python setup.py install # Install any dependencies
+sudo python3 setup.py install # Install any dependencies
 ```
 
 Alternativamente, você pode baixar a última versão estável (em inglês) a partir do link <a href="https://github.com/wifiphisher/wifiphisher/releases">Página de versões</a>.
