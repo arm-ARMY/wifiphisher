@@ -6,7 +6,7 @@
 <p align="center"><img src="https://wifiphisher.github.io/wifiphisher/wifiphisher.png" /></p>
 
 ## Sobre a Tradução
-Esse projeto não é de minha autoria, apenas traduzi os arquivos html para português. Qualquer erro de tradução, acentuação ou conconrdância percebido e sugestões são bem-vindas para o aprimoramento da ferramenta.
+Esse projeto não é de minha autoria, apenas traduzi os arquivos html para português. Qualquer erro de tradução, ortografia, acentuação ou concordância percebido e/ou sugestões são bem-vindas.
 
 O projeto original e todo o crédito de programação pode ser conferido no repositório oficial do GitHub:
 
