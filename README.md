@@ -5,14 +5,15 @@
 
 <p align="center"><img src="https://wifiphisher.github.io/wifiphisher/wifiphisher.png" /></p>
 
-## Sobre
-<a href="https://wifiphisher.org">Wifiphisher</a> é um framework que utiliza um Ponto de Acesso falso para conduzir testes de segurança em redes Wi-Fi. Usando Wifiphisher, profissionais de segurança da informação podem facilmente se colocar na posição man-in-the-middle, testando clientes vulneráveis por ataques de associação a uma rede Wi-Fi. Wifiphisher pode ser também utilizado para atuar de forma customizada para entregar ataques com páginas de phishing para clientes com o intuito de capturar credenciais (ex.: desde login em páginas de terceitos ou senhas WPA/WPA2 compartilhadas) ou infectar o cliente com malwares.
+## Tradução
+Esse projeto não é de minha autoria, apenas o traduzi os arquivos html para português. Qualquer falha na tradução estou aberto a correções e sugestões para o aprimoramento da ferramenta.
 
-Esse projeto não é de minha autoria, apenas o traduzi para português. Qualquer falha na tradução estou aberto a correções e sugestões para o aprimoramento da ferramenta
-
-O projeto original e todo o crédito de programação pode ser conferido na pagina:
+O projeto original e todo o crédito de programação pode ser conferido na página:
 
 https://github.com/wifiphisher/wifiphisher
+
+## Sobre
+<a href="https://wifiphisher.org">Wifiphisher</a> é um framework que utiliza um Ponto de Acesso falso para conduzir testes de segurança em redes Wi-Fi. Usando Wifiphisher, profissionais de segurança da informação podem facilmente se colocar na posição man-in-the-middle, testando clientes vulneráveis por ataques de associação a uma rede Wi-Fi. Wifiphisher pode ser também utilizado para atuar de forma customizada para entregar ataques com páginas de phishing para clientes com o intuito de capturar credenciais (ex.: desde login em páginas de terceiros ou senhas WPA/WPA2 compartilhadas) ou infectar o cliente com malwares.
 
 Wifiphisher é...
 
@@ -194,7 +195,7 @@ Wifiphisher é licenciado sob a licensa GPLv3. Veja [LICENSE](LICENSE) para mais
 Wifiphisher está atualmente na versão **1.4**. Você pode baixar a versão mais recente <a href="https://github.com/wifiphisher/wifiphisher/releases/tag/v1.4">aqui</a>. Entretanto você pode clonar a esse repositório, que é  a última versão em desenvolvimento.
 
 ## Status dessa tradução (W.I.P)
-Atualmente a versão usada nessa tradução foi a última versão em desenvolvimento. Ela encontra-se na fase de desenvolvimento. A pasta firmware-upgrade
+Atualmente a versão usada nessa tradução foi a última versão em desenvolvimento (**1.4**). Essa tradução tambem encontra-se nem fase de desenvolvimento. A pasta firmware-upgrade
 está na sua fase final. Os três outros estão por vir logo logo. 
 
 ## AVISO
