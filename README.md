@@ -21,7 +21,7 @@ https://github.com/wifiphisher/extra-phishing-pages
 
 Wifiphisher é...
 
-* ...poderoso. Wifiphisher pode rodar por horas em um Raspberry Pi (funciona perfeitamente no Raspberry 4B e Raspberry 400 com o Kali Linux)
+* ...poderoso. Wifiphisher pode rodar por horas em um Raspberry Pi (funciona perfeitamente no Raspberry 4B e Raspberry 400 com Kali Linux)
 executando todas as técnicas modernas de associação Wi-Fi (incluindo "Evil Twin", "KARMA" e "Known Beacons"). 
 
 * ...flexível. Tem suporte de vários argumentos e vem com um conjunto de
