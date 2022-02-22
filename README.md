@@ -12,6 +12,10 @@ O projeto original e todo o crédito de programação pode ser conferido no repo
 
 https://github.com/wifiphisher/wifiphisher
 
+As páginas adicionais da pasta wifiphisher/data/phishingpages são de diversos desenvolvedores da comunidade e todo o crédito pode ser conferido em:
+
+https://github.com/wifiphisher/extra-phishing-pages
+
 ## Sobre
 <a href="https://wifiphisher.org">Wifiphisher</a> é um framework que utiliza um Ponto de Acesso falso para conduzir testes de segurança em redes Wi-Fi. Usando Wifiphisher, profissionais de segurança da informação podem facilmente se colocar na posição man-in-the-middle, testando clientes vulneráveis por ataques de associação a uma rede Wi-Fi. Wifiphisher pode ser também utilizado para atuar de forma customizada para entregar ataques com páginas de phishing para clientes com o intuito de capturar credenciais (ex.: desde login em páginas de terceiros ou senhas WPA/WPA2 compartilhadas) ou infectar o cliente com malwares.
 
