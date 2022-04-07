@@ -203,14 +203,14 @@ Wifiphisher é licenciado sob a licensa GPLv3. Veja [LICENSE](LICENSE) para mais
 Wifiphisher está atualmente na versão **1.4**. Você pode baixar a versão mais recente <a href="https://github.com/wifiphisher/wifiphisher/releases/tag/v1.4">aqui</a>. Entretanto você pode clonar a esse repositório, que é a última versão em desenvolvimento.
 
 ## Status dessa tradução (W.I.P)
-Atualmente a versão usada nessa tradução foi a última versão em desenvolvimento (**1.4**). Essa tradução tambem encontra-se em fase de desenvolvimento. A pasta phishing-pages teve seus respectivos html's traduzidos. Necessita de revisão ainda. Testada e funcionando: 
+Atualmente a versão usada nessa tradução foi a última versão em desenvolvimento (**1.4**). Essa tradução também encontra-se em fase de desenvolvimento. A pasta phishing-pages teve seus respectivos html's traduzidos. Necessita de revisão ainda. Testada e funcionando: 
 
 - Kali Linux 2021.2 amd64 live
 - Kali Linux 2022.1 i386 live
 - Kali Linux 2021 aarch64 Raspberry Pi 4B e 400
 
 ## AVISO
-* O uso do Wifiphisher para atacar infraestruturas sem o consentimento mútuo pode ser considerado uma atividade ilegal. É responsabilidade do usuário final obedecer todas as leis aplicáveis, sejam locais, estaduais ou federais. Os autores nao assumem nenhuma responsabilidade por uso indevido ou causado por esse programa.
+* O uso do Wifiphisher para atacar infraestruturas sem o consentimento mútuo pode ser considerado uma atividade ilegal. É responsabilidade do usuário final obedecer todas as leis aplicáveis, sejam locais, estaduais ou federais. Os autores não assumem nenhuma responsabilidade por uso indevido ou causado por esse programa.
 
 <b>Nota dos desenvolvedores</b>: Cuidado com sites fingindo estar relacionadas ao Wifiphisher Project. Elas podem conter malwares.
 
